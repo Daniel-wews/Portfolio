@@ -1,0 +1,89 @@
+.container-props{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    width: 340px;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 4rem;
+}
+
+.container-props:hover{
+transform: scale(1.1);
+transition: .5s;
+transition-timing-function: ease-in-out;
+}
+
+.container-props img{
+    width: 100%;
+    border-radius: 2rem;
+    padding: 1.2rem;
+}
+
+.container-props h3{
+    font-size: 2rem;
+}
+
+.container-props a{
+    font-size: 1rem;
+    color:black;
+    text-decoration: none;
+}
+
+.container-props div{
+    margin:1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-props button{
+    margin: 0.4rem 0.7rem;
+}
+
+.btn-project{
+    border: none;
+    border-radius: 2rem;
+}
+
+.btn-project a{
+    display: inline-block;
+    font-weight: 500;
+    padding: 1rem;
+    text-decoration: none;
+    border: 1px solid black; 
+    color: #000; 
+    background-color: #fff;
+    border-radius: 2rem;
+    width:100%;
+}
+
+.btn-project a:hover{
+    background-color:#000 ; 
+    color: #fff; 
+}
+
+.btn-project a:active {
+    background-color: #fff;
+    transform: scale(0.8);
+    transition: .6s;
+}
+
+@media screen and (max-width:1116px){
+    .container-props{
+        width:45%;
+    }
+
+    .container-props:nth-of-type(3){
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .container-props, .container-props:nth-of-type(3){
+        width: 90%;
+    }
+
+}

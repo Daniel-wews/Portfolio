@@ -1,0 +1,69 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer h2{
+    font-weight: 400;
+    font-size: 30px;
+    margin: 1.5rem;
+}
+
+footer ul{
+    display: flex;
+}
+
+footer li{
+    list-style: none;
+    margin-left: 10px;
+    padding:5px;
+}
+
+footer div{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+footer button {
+    width: 200px;
+    margin:0.5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid black; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer button a {
+    margin: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 22px;
+    color:black;
+}
+
+footer nav a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(156, 155, 155);
+}
+
+@media screen and (max-width:600px){
+    .centraliza h2{
+        font-size: 2rem;
+    }
+
+    footer div{
+        flex-direction: column;
+    }
+
+    footer ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+

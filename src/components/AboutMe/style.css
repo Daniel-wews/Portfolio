@@ -1,0 +1,61 @@
+.box-02{
+    text-align: center;
+    display: flex;
+    gap: 4rem;
+    height: 80%;
+}
+
+.centraliza{
+    text-align: center;
+    padding:60px 0;
+}
+
+.centraliza h2{
+    font-size: 3rem;
+}
+
+.foto-perfil-02 img{
+    width:400px;
+    border-radius: 2rem;
+}
+
+.sobre-mim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre-mim div{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.sobre-mim figure{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: grey 0.1rem solid;
+    border-color: rgb(146, 141, 141);
+    text-align: center;
+
+}
+
+@media screen and (max-width:1250px){
+    .box-02{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px){
+    .sobre-mim div{
+        flex-direction: column;
+    }
+    .foto-perfil-02 img{
+        width:auto;
+        height:46vw;
+    }
+}
